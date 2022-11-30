@@ -10759,7 +10759,19 @@ textarea.form-control-lg {
   }
 }
 hr {
-  border-top: 1px solid #ae296b;
+  border-top: 1px solid #5CB86E;
+}
+
+.navbar-brand {
+  font-size: xx-large;
+}
+
+.slogan {
+  margin-bottom: 50px;
+}
+
+.box-margin {
+  margin: 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */
