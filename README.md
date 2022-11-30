@@ -2,40 +2,28 @@
 
 Social media application
 
-# Goal
+## Goal
 
-To apply knowledge of Bootstrap and SASS to build a responsive front end for a social media application.
+To take the skills learned over the past three semesters and create an auction website.
+Brief
 
 ## Brief
 
-You are tasked with creating 3 pages in HTML using Bootstrap and SASS:
+An auction site is looking to launch a website where users can add items to be bid on and bid on items other users have put up for auction.
 
-- Homepage
-- Profile page
-- Login page
+When a new user joins the website, they are given 1000 credits to use on the site. They can get credits by selling items and use credit by buying items. Non-registered users can search through the listings, but only registered users can make bids on listings.
 
-The Homepage should have a feed of posts from the user’s contacts, a search bar, and a form to create a new post.
+## User stories
 
-The profile page should have a profile image, details about the user, a list of the user’s contacts, their posts and a form to post to their wall.
+The client has specified the following requirements in the form of User Stories:
 
-The login page should have a form to login to the application. Make sure to include HTML form validation and use /profile as the action attribute.
-
-You will only be working on the visuals for this project at this stage, forms do not need to submit data, for example.
-
-Submission for this project will follow the pattern used in professional development. You are required to seek feedback from your peers as well as the teachers in order to complete this assignment.
-
-## Process
-
-1. Create a design or wireframe for each page
-2. Create a new public repository on GitHub
-3. Create a new project folder for this repository
-4. Create a new git branch for this project
-5. Create a package.json file
-6. Install Bootstrap, SASS and Live Server
-7. Configure NPM scripts in package.json
-8. Implement your design using Bootstrap and SASS overrides
-9. Create a Pull Request to merge your changes to the main branch
-10. Share this Pull Request and request peer review
-11. Discuss and implement the feedback gathered from peer review
-12. Share this Pull Request with a teacher for their approval
-13. Complete the approved Pull Request, or implement the required changes
+[ ] A user with a stud.noroff.no email may register
+[ ] A registered user may login
+[ ] A registered user may logout
+[ ] A registered user may update their avatar
+[ ] A registered user may view their total credit
+[ ] A registered user may create a Listing with a title, deadline date, media gallery and description
+[ ] A registered user may add a Bid to another user’s Listing
+[ ] A registered user may view Bids made on a Listing
+[ ] A registered user may use credit to make a Bid on another user’s Listing
+[ ] An unregistered user may search through Listings
