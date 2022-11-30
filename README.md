@@ -18,7 +18,7 @@ The client has specified the following requirements in the form of User Stories:
 
 - [ ] A user with a stud.noroff.no email may register
 
-- [ ] A registered user may login
+- [x] A registered user may login
 
 - [ ] A registered user may logout
 
