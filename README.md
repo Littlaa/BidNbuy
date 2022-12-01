@@ -16,7 +16,7 @@ When a new user joins the website, they are given 1000 credits to use on the sit
 
 The client has specified the following requirements in the form of User Stories:
 
-- [ ] A user with a stud.noroff.no email may register
+- [x] A user with a stud.noroff.no email may register
 
 - [x] A registered user may login
 
