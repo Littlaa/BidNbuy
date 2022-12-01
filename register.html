@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/css/styles.css" />
-    <script src="/js/index.mjs" defer type="module"></script>
+    <script src="js/index.mjs" defer type="module"></script>
     <title>BidNbuy | Register</title>
   </head>
   <body>
@@ -64,6 +64,7 @@
                               name="name"
                               required
                               pattern="^[\w]+$"
+                              maxlength="20"
                               title="User name must only contain lower case and upper case letters, numbers and underscore (_). Example: User_123"
                               id="form3Example1c"
                               class="form-control"
@@ -78,7 +79,7 @@
                               type="email"
                               name="email"
                               required
-                              pattern="^[\w\-.]+@stud.?noroff.no$"
+                              pattern="^[\w\-.]+@(stud.)?noroff.no$"
                               title="Only @stud.noroff.no domains are allowed to register."
                               id="form3Example3c"
                               class="form-control"

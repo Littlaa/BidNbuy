@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/css/styles.css" />
-    <title>BidNbuy | LogIn</title>
+    <script src="/js/index.mjs" defer type="module"></script>
+    <title>BeSocial | LogIn</title>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">BidNbuy</a>
+          <a class="navbar-brand" href="index.html">BeSocial</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -50,19 +51,25 @@
       <div class="d-flex justify-content-center">
         <div class="tab-content">
           <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
-            <form class="d-flex flex-column" action="/profile.html">
+            <form class="d-flex flex-column" id="loginForm">
               <div class="form-outline mb-4">
-                <input type="email" id="loginName" class="form-control" required />
-                <label class="form-label" for="loginName">Email or username</label>
+                <label class="form-label" for="loginName">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="loginName"
+                  class="form-control"
+                  required
+                  pattern="^[\w\-.]+@(stud.)?noroff.no$"
+                />
               </div>
               <div class="form-outline mb-4">
-                <input type="password" id="loginPassword" class="form-control" required />
                 <label class="form-label" for="loginPassword">Password</label>
+                <input type="password" name="password" id="loginPassword" class="form-control" required minlength="8" />
               </div>
-              <div class="mb-4 d-flex justify-content-between"></div>
-              <button type="submit" class="btn btn-primary btn-block mb-4 mx-auto">Sign in</button>
+              <button class="btn btn-primary btn-block mb-4 mx-auto btn-success">Sign in</button>
               <div class="text-center">
-                <p>Not a member? <a href="register.html">Register</a></p>
+                <p>Not a member? <a href="/register.html">Register</a></p>
               </div>
             </form>
           </div>
@@ -71,7 +78,7 @@
       <hr />
     </main>
     <footer class="my-5 pt-5 text-muted text-center text-small container">
-      <p class="mb-1">© 2022 BidNbuy</p>
+      <p class="mb-1">© 2022 BeSocial</p>
       <ul class="list-inline">
         <li class="list-inline-item"><a href="#">Privacy</a></li>
         <li class="list-inline-item"><a href="#">Terms</a></li>
