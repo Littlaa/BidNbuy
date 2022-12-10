@@ -16,9 +16,11 @@ async function getListings(url) {
                                     <h5 class="card-title">${listings[i].title}</h5>
                                     <p class="card-text">${listings[i].description}</p>
                                     <p class="card-text">Sellers name - ${listings[i].seller.name}</p>
-                                    <p class="card-text">Last bid - ${getLastBid(listings[i].bids)}</p>
+                                    <p class="card-text">Last bid - ${getLastBid(listings[i].bids)} $</p>
                                     <p class="card-text">Bidders - ${listings[i]._count.bids}</p>
-                                    <a href="#" class="btn btn-primary">View listing</a>
+                                    <a href="specific.html?listId=${
+                                      listings[i].id
+                                    }" class="btn btn-primary">View listing</a>
                                     </div>
                                     <div class="card-footer">
                                     <small class="text-muted">Updated - ${listings[i].updated}</small>
