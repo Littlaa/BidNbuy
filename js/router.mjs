@@ -7,7 +7,9 @@ if (path === "/login.html") {
 } else if (path === "/register.html") {
   listeners.setRegisterFormListener();
 } else if (path === "/index.html") {
-  listeners.setCreatePostFormListener();
+  listeners.logoutListener();
 } else if (path === "/profile.html") {
-  listeners.setUpdatePostListener();
+  listeners.logoutListener();
+} else if (path === "/specific.html") {
+  listeners.logoutListener();
 }

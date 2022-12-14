@@ -11,15 +11,15 @@ export async function register(profile) {
   const registerURL = API_AUCTION_URL + action;
   const body = JSON.stringify(profile);
 
-  const response = await fetch(registerURL, {
+  await fetch(registerURL, {
     headers: {
       "Content-Type": "application/json",
     },
     method,
     body,
+  }).then((response) => {
+    if (response.ok) {
+      window.location.assign("/profile");
+    }
   });
-
-  const result = await response.json();
-  alert("You are now registered");
-  return result;
 }
