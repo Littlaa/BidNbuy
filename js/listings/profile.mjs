@@ -37,8 +37,6 @@ export async function getProfile() {
   </div>`;
 
     addTitle(info);
-
-    console.log(info);
   } catch (error) {
     console.log(error);
   }
