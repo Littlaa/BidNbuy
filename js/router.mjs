@@ -12,4 +12,6 @@ if (path === "/login.html") {
   listeners.logoutListener();
 } else if (path === "/specific.html") {
   listeners.logoutListener();
+} else if (path === "/create.html") {
+  listeners.setCreateListingFormListener();
 }
