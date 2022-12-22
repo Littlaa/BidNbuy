@@ -3,3 +3,4 @@ export * from "./register.mjs";
 export * from "./logout.mjs";
 export * from "./createListing.mjs";
 export * from "./updateAvatar.mjs";
+export * from "./createBid.mjs";

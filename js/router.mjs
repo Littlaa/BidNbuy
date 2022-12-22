@@ -16,4 +16,6 @@ if (path === "/login.html") {
   listeners.setCreateListingFormListener();
 } else if (path === "/avatar.html") {
   listeners.setAvatarListener();
+} else if (path === "/bid.html") {
+  listeners.setAddBidListener();
 }

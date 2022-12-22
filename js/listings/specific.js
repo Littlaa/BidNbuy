@@ -22,6 +22,11 @@ async function getListing() {
                                     <p class="card-text">Last bid - ${getLastBid(listing.bids)} $</p>
                                     <p class="card-text">Bidders - ${listing._count.bids}</p>
                                     </div>
+                                    <ul class="list-group list-group-flush">
+                                    <li class="list-group-item nav-item">
+                                    <a class="nav-link create-button" href="bid.html">Place Bid</a>
+                                    </li>
+                                    </ul>
                                     <div class="card-footer">
                                     <small class="text-muted">Updated - ${listing.updated}</small>
                                     </div>
