@@ -24,9 +24,9 @@ The client has specified the following requirements in the form of User Stories:
 
 - [ ] A registered user may update their avatar
 
-- [ ] A registered user may view their total credit
+- [x] A registered user may view their total credit
 
-- [ ] A registered user may create a Listing with a title, deadline date, media gallery and description
+- [x] A registered user may create a Listing with a title, deadline date, media gallery and description
 
 - [ ] A registered user may add a Bid to another user’s Listing
 
