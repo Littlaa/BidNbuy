@@ -12,30 +12,27 @@ const method = "GET";
 const url = `${API_AUCTION_URL}${action}/${userName}${list}`;
 const listContainer = document.querySelector(".profileListing");
 
-console.log(url);
-
 export async function getProfileListing() {
   try {
     const response = await authFetch(url, { method });
     const infoListing = await response.json();
 
-    listContainer.innerHTML = `
-      <div class="row row-cols-1 row-cols-md-3 g-4 box-margin">
+    for (let i = 0; i < infoListing.length; i++) {
+      listContainer.innerHTML += `
         <div class="col">
           <div class="card h-100">
-            <img src="${infoListing.media}" class="card-img-top" />
+            <img src="${infoListing[i].media}" class="card-img-top" />
             <div class="card-body">
-              <h5 class="card-title">${infoListing.title}</h5>
-              <p class="card-text">${infoListing.description}</p>
+              <h5 class="card-title">${infoListing[i].title}</h5>
+              <p class="card-text">${infoListing[i].description}</p>
             </div>
             <div class="card-footer">
               <small class="text-muted">Last updated 3 mins ago</small>
             </div>
           </div>
         </div>
-        </div>`;
-
-    console.log(infoListing);
+      `;
+    }
   } catch (error) {
     console.log(error);
   }
