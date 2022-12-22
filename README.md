@@ -22,7 +22,7 @@ The client has specified the following requirements in the form of User Stories:
 
 - [x] A registered user may logout
 
-- [ ] A registered user may update their avatar
+- [x] A registered user may update their avatar
 
 - [x] A registered user may view their total credit
 
