@@ -10774,11 +10774,11 @@ hr {
   margin: 50px;
 }
 
-.create-button {
+.create-button, .avatar-button {
    text-decoration: underline;
 }
 
-.create-button:hover {
+.create-button:hover, .avatar-button:hover {
   color:#5CB86E;
 }
 
