@@ -31,6 +31,7 @@ export async function getProfile() {
       <ul class="list-group list-group-flush">
       <li class="list-group-item nav-item">
       <a class="nav-link create-button" href="create.html">Create Listing</a>
+      <a class="nav-link avatar-button mt-3" href="avatar.html">Update Avatar</a>
       </li>
     </ul>
     </div>

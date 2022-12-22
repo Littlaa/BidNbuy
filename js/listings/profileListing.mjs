@@ -27,7 +27,7 @@ export async function getProfileListing() {
               <p class="card-text">${infoListing[i].description}</p>
             </div>
             <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+              <small class="text-muted">Ends at - ${infoListing[i].endsAt}</small>
             </div>
           </div>
         </div>
