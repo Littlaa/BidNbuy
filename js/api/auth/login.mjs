@@ -26,5 +26,5 @@ export async function login(profile) {
 
   storage.save("profile", user);
 
-  window.location.assign("/profile");
+  window.location.assign("/profile.html");
 }
