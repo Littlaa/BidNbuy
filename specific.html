@@ -8,6 +8,16 @@
     <script src="./js/index.mjs" defer type="module"></script>
     <script src="./js/listings/specific.js" defer></script>
     <title>BidNbuy |</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -36,9 +46,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="login.html">LogIn</a>
               </li>
-              <li class="nav-item">
-                <button class="nav-link logout" id="logoutButton">LogOut</button>
-              </li>
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
@@ -49,7 +56,7 @@
       </nav>
     </header>
     <main>
-      <div class="listingDetails row row-cols-1 row-cols-md-3 g-4 box-margin center"></div>
+      <div class="listingDetails row row-cols-1 row-cols-md-3 g-4 box-margin"></div>
     </main>
     <footer class="my-5 pt-5 text-muted text-center text-small container">
       <p class="mb-1">© 2022 BidNbuy</p>
