@@ -17,15 +17,14 @@
       defer
     ></script>
     <link rel="stylesheet" href="/dist/css/styles.css" />
-    <script src="./js/index.mjs" defer type="module"></script>
-    <script src="./js/listings/front.js" defer></script>
-    <title>BidNbuy | Home</title>
+    <script src="js/index.mjs" defer type="module"></script>
+    <title>BidNbuy | Place Bid</title>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand logo" href="index.html">BidNbuy</a>
+          <a class="navbar-brand" href="index.html">BidNbuy</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -40,7 +39,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="profile.html">Profile</a>
@@ -60,7 +59,39 @@
         </div>
       </nav>
     </header>
+    <main>
+      <section class="vh-100" style="background-color: #eee">
+        <div class="container h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-lg-12 col-xl-11">
+              <div class="card text-black" style="border-radius: 25px">
+                <div class="card-body p-md-5">
+                  <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                      <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Place bid</p>
 
+                      <form class="mx-1 mx-md-4" id="placeBid">
+                        <div class="d-flex flex-row align-items-center mb-4">
+                          <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                          <div class="form-outline flex-fill mb-0">
+                            <label class="form-label" for="form3Example3c">Amount</label>
+                            <input type="number" name="amount" id="form3Example3c" class="form-control" required />
+                          </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                          <button class="btn btn-primary btn-lg btn-success">Place Bid</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="my-5 pt-5 text-muted text-center text-small container">
       <p class="mb-1">© 2022 BidNbuy</p>
       <ul class="list-inline">

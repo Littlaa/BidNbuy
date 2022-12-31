@@ -1,7 +1,7 @@
 {
-  "name": "css-frameworks-ca",
-  "version": "1.0.0",
-  "description": "Social media application",
+  "name": "BidNbuy",
+  "version": "1.0.2",
+  "description": "Auction House",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Littlaa/css-frameworks-ca.git"
+    "url": "git+https://github.com/Littlaa/BidNbuy.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Littlaa/css-frameworks-ca/issues"
+    "url": "https://github.com/Littlaa/BidNbuy.git/issues"
   },
-  "homepage": "https://github.com/Littlaa/css-frameworks-ca#readme",
+  "homepage": "https://github.com/Littlaa/BidNbuy.git#readme",
   "dependencies": {
     "bootstrap": "^5.2.0"
   },
