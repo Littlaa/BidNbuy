@@ -25,6 +25,5 @@ export async function updateAvatar(avatarData) {
     body: JSON.stringify(avatarData),
   });
 
-  window.location.assign("/profile");
   return await response.json();
 }
