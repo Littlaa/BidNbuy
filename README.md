@@ -1,4 +1,4 @@
-# Description
+# BidNBuy
 
 Auction House
 
@@ -35,3 +35,13 @@ The client has specified the following requirements in the form of User Stories:
 - [ ] A registered user may use credit to make a Bid on another user’s Listing
 
 - [ ] An unregistered user may search through Listings
+
+## Run the App
+
+Install project locally:
+
+`npm i`
+
+To run
+
+`npm run build`
