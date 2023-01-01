@@ -12,6 +12,8 @@ export async function setAvatarListener() {
       const avatar = Object.fromEntries(formData.entries());
       save("avatar", form.avatar.value);
 
+      alert("Avatar updated!");
+
       updateAvatar(avatar);
     });
   }
