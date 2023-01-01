@@ -11,7 +11,7 @@ async function getListings(url) {
     for (let i = 0; i < listings.length; i++) {
       results.innerHTML += `<div class="col">
                                     <div class="card h-100">
-                                    <img src="${listings[i].media}" class="card-img-top"/>
+                                    <img src="${listings[i].media}" class="card-img-top" alt="Listing media"/>
                                     <div class="card-body">
                                     <h5 class="card-title">${listings[i].title}</h5>
                                     <p class="card-text">${listings[i].description}</p>

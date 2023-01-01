@@ -20,7 +20,7 @@ export async function getProfileListing() {
       listContainer.innerHTML += `
         <div class="col">
           <div class="card h-100">
-            <img src="${infoListing[i].media}" class="card-img-top" />
+            <img src="${infoListing[i].media}" class="card-img-top" alt="Listing" />
             <div class="card-body">
               <h5 class="card-title">${infoListing[i].title}</h5>
               <p class="card-text">${infoListing[i].description}</p>
