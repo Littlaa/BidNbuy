@@ -17,9 +17,5 @@ export async function register(profile) {
     },
     method,
     body,
-  }).then((response) => {
-    if (response.ok) {
-      window.location.assign("/profile");
-    }
   });
 }
