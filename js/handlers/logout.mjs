@@ -6,5 +6,6 @@ export function logoutListener() {
   logoutButton.addEventListener("click", () => {
     remove("token");
     remove("profile");
+    location.reload();
   });
 }
