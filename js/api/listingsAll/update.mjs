@@ -1,28 +1,27 @@
 import { API_AUCTION_URL } from "../constants.mjs";
 import { authFetch } from "../authFetch.mjs";
-import { load } from "../../storage/index.mjs";
-
-const action = "/profiles";
-const avatar = "/media";
-const method = "put";
-
-const user = load("profile");
-
-const updateAvatarUrl = `${API_AUCTION_URL}${action}/${user.name}${avatar}`;
+import * as storage from "../../storage/index.mjs";
 
 /**
  * Lets user update avatar on profile
  */
 
 export async function updateAvatar(avatarData) {
-  if (!user) {
-    throw new console.error("Need a user");
-  }
+  const userInfo = storage.load("profile");
+  const { name } = userInfo;
+  const action = `/profiles/${name}/media`;
+  const method = "put";
+
+  const updateAvatarUrl = `${API_AUCTION_URL}${action}`;
 
   const response = await authFetch(updateAvatarUrl, {
     method,
     body: JSON.stringify(avatarData),
   });
 
-  return await response.json();
+  if (response.ok) {
+    location.reload();
+  } else {
+    alert("Something went wrong");
+  }
 }

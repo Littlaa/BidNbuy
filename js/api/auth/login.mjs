@@ -26,7 +26,7 @@ export async function login(profile) {
 
   storage.save("profile", user);
 
-  if ((response, ok)) {
+  if (response.ok) {
     alert("You are logged in!");
     location.href = "profile.html";
   } else {
