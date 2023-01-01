@@ -25,4 +25,11 @@ export async function login(profile) {
   storage.save("token", accessToken);
 
   storage.save("profile", user);
+
+  if ((response, ok)) {
+    alert("You are logged in!");
+    location.href = "profile.html";
+  } else {
+    alert("Something went wrong");
+  }
 }

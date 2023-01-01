@@ -7,9 +7,8 @@ const avatar = "/media";
 const method = "put";
 
 const user = load("profile");
-const userName = user.name;
 
-const updateAvatarUrl = `${API_AUCTION_URL}${action}/${userName}${avatar}`;
+const updateAvatarUrl = `${API_AUCTION_URL}${action}/${user.name}${avatar}`;
 
 /**
  * Lets user update avatar on profile

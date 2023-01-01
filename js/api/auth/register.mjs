@@ -18,4 +18,11 @@ export async function register(profile) {
     method,
     body,
   });
+
+  if (response.ok) {
+    alert("Registration was successful");
+    location.href = "login.html";
+  } else {
+    alert("Something went wrong");
+  }
 }

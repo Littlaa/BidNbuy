@@ -3,12 +3,11 @@ import { authFetch } from "../api/authFetch.mjs";
 import { load } from "../storage/index.mjs";
 
 const user = load("profile");
-const userName = user.name;
 
 const action = "/profiles";
 const method = "GET";
 
-const url = `${API_AUCTION_URL}${action}/${userName}`;
+const url = `${API_AUCTION_URL}${action}/${user.name}`;
 const container = document.querySelector(".profileData");
 
 export async function getProfile() {

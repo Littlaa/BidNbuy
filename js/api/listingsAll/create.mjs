@@ -17,5 +17,9 @@ export async function createListing(listingData) {
     body: JSON.stringify(listingData),
   });
 
-  return await response.json();
+  if (response.ok) {
+    return await response.json();
+  } else {
+    alert("Something went wrong");
+  }
 }
