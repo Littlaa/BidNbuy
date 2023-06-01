@@ -17,7 +17,7 @@ export async function getProfile() {
 
     container.innerHTML = `<div class="d-flex justify-content-center pt-4">
     <div class="card">
-      <img src="${info.avatar}" class="card-img-top" height="300" alt="Profile image"/>
+      <img src="${info.avatar}" class="card-img-top" height="300" alt="Profile images"/>
       <div class="card-body">
         <h5 class="card-title mb-2">${info.name}</h5>
         <h6 class="card-title mb-4">${info.email}</h6>
