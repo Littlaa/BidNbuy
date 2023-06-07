@@ -46,34 +46,6 @@ To run the app, run the following command:
 npm run start
 ```
 
-### Goal
-
-To take the skills learned over the past three semesters and create an auction website.
-
-### User stories
-
-The client has specified the following requirements in the form of User Stories:
-
-- [x] A user with a stud.noroff.no email may register
-
-- [x] A registered user may login
-
-- [x] A registered user may logout
-
-- [x] A registered user may update their avatar
-
-- [x] A registered user may view their total credit
-
-- [x] A registered user may create a Listing with a title, deadline date, media gallery and description
-
-- [ ] A registered user may add a Bid to another user’s Listing
-
-- [ ] A registered user may view Bids made on a Listing
-
-- [ ] A registered user may use credit to make a Bid on another user’s Listing
-
-- [ ] An unregistered user may search through Listings
-
 #### Contributing
 
 If you want to contribute to this auction house site - here are the steps you should follow:
