@@ -1,5 +1,8 @@
 # BidNBuy
 
+![image](images/header.png)
+![image](images/listings.png)
+
 Auction House
 
 ## Goal
